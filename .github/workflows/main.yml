@@ -24,5 +24,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Start Init
+        run: sudo chmod 77 rr_build.sh
         run: ./rr_build.sh
 
