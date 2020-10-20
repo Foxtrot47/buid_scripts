@@ -23,7 +23,9 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Start Init
-        run: sudo chmod 77 rr_build.sh
+      - name: setup permissions
+        run: sudo chmod 777 rr_build.sh
+        
+      - name: Init
         run: ./rr_build.sh
 
